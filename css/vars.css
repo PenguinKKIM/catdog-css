@@ -1,0 +1,13 @@
+:root{
+    --text-color : #303438;
+
+    --btn-nomal: #FFC000;
+    --btn-hover: #FCE798;
+    --btn-submit: #F9950F;
+
+    --btn-disable: #D5D6D7;
+}
+
+.tx-black{
+    color: var(--text-color);
+}

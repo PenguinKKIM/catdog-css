@@ -1,0 +1,66 @@
+/** 회원가입/ 로그인/ 비밀번호찾기/ 아이디 찾기 창 css */
+
+input::placeholder{
+    font-family: 'Pretendard-Regular';
+    font-size: 1rem;
+    font-weight: 600;
+    color: #979797;
+}
+
+.input-text{
+    border: none;
+    outline: none;
+    border-bottom:1px solid var(--text-color) ;
+    width: 20vw;
+    height: 80px;
+    font-family: 'Pretendard-Regular';
+    font-size: 1.2rem;
+    padding: 0;
+}
+
+.login-tools{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 1.5rem;
+}
+
+.duplication-check{
+    position: relative;
+}
+.duplication-btn{
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+}
+
+
+.logintool-text{
+    font-weight: 600;
+}
+
+.login-form-section{
+    height: 100%;
+}
+
+.form-css{
+    height: 100%;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.magin-t-1{
+    margin-top: 1rem;
+}

@@ -1,0 +1,39 @@
+.cd-container{
+    position: relative;
+}
+.modal-alert{
+    position:absolute;
+    width:inherit;
+    height:100%;
+    
+    top:0;
+    left: 0;
+    z-index: 5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-body{
+    width: 22vw;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.modal-text,.modal-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal-body{
+    justify-content: space-evenly;
+}
+.modal-btns{
+    display: flex;
+}
