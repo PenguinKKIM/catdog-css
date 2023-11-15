@@ -31,14 +31,16 @@
     align-items: center;
     width: 35vw;
     min-height: 100vh;
+    font-family: 'Pretendard-Regular';
 }
+
 
 .bg-white{
     background-color: white;
 }
 
 .main-background{
-    background-image: url('/img/background/main_bg.png');
+    background-image: url('../../img/background/main_bg.png');
     background-size: cover;
     background-position: 50%;
 

@@ -7,8 +7,11 @@
     <title>Login</title>
 </head>
 <body>
+    <!-- 웹버전 일때 컨테이너 -->
     <div class="web-container">
+        <!-- 앱 컨테이너 -->
         <div class="cd-container bg-white">
+            <!-- 모달 알림창 -->
             <div id="modalAlert" class="modal-alert hidden">
                 <div class="modal-body">
                     <div class="modal-text">
@@ -18,53 +21,70 @@
                     <div class="modal-btns">
                     <button id="cancleBtn" class="small-btn btn-gray">취소</button>
                     <button class="small-btn">가입하기</button>
-                    </div>
-                    
+                    </div>                    
                 </div>
             </div>
+
+            <!-- 메인 컨텐트 -->
             <main class="cd-main">
 
+                <!-- 로고 -->
                 <section class="main-logo"> 
                     <img src="img/logo/logo_color.png" alt="댕냥꽁냥 로고">
-                    <span class="main-logo-text">보호자 로그인</span>
+                    <span class="main-logo-text">보호자 회원가입</span>
                 </section>
 
-
-                <section class="login-form-section">
+                <!-- 폼 -->
+                <section class="form-section">
                     <form action="#" method="post" class="form-css">
                         <div class="form-container">
+                            <!-- 인풋 모여있는 컨테이너 -->
                             <div class="input-container">
 
                                 <input type="text" id="nomal-login" name="nomal-login" placeholder="이름" class="input-text">
 
+                                <!-- 중복확인 버튼 있음 -->
                                 <div class="duplication-check">
                                     <input type="text" id="nomal-password" name="nomal-password" placeholder="아이디" class="input-text">
                                     <button class="duplication-btn small-btn">중복확인</button>
                                 </div>
 
+                                <!-- 중복확인 버튼 있음 -->
                                 <div class="duplication-check">
                                     <input type="text" id="nomal-password" name="nomal-password" placeholder="닉네임" class="input-text">
                                     <button class="duplication-btn small-btn">중복확인</button>
                                 </div>
                                 
-                                <input type="password" id="nomal-password" name="nomal-password" placeholder="비밀번호" class="input-text">
-                                <input type="password" id="nomal-password" name="nomal-password" placeholder="비밀번호 확인" class="input-text">
-                                <input type="text" id="nomal-password" name="nomal-password" placeholder="휴대폰 번호" class="input-text">
-                                <input type="text" id="nomal-password" name="nomal-password" placeholder="주소입력" class="input-text">
+                                <input type="password" id="password" name="password" placeholder="비밀번호" class="input-text">
+                                <input type="password" id="passwordCheck" name="passwordCheck" placeholder="비밀번호 확인" class="input-text">
+                                <input type="text" id="phoneNumber" name="phoneNumber" placeholder="휴대폰 번호" class="input-text">
 
-                                <div class="login-tools">                                   
+                                <div class="duplication-check">
+                                    <input type="text" id="postcode" placeholder="우편번호" class="input-text">
+                                    <input type="button" onclick="sample3_execDaumPostcode()" value="우편번호 찾기" class="duplication-btn small-btn">
+                                </div>
+
+                                <input type="text" id="address" name="address" placeholder="주소" class="input-text"><br>
+                                <input type="text" id="detailAddress" placeholder="상세주소" class="input-text">
+                                <input type="text" id="extraAddress" placeholder="참고항목" class="input-text">
+
+                                <!-- 로그인/ 로그아웃/ 계정찾기/ 비밀번호 찾기  -->
+                                <div class="login-tools">  
+                                    <div></div>                                
                                     <div>
                                         <span class="logintool-text"><a href="#">로그인</a></span>
                                         <span class="logintool-text"><a href="#">계정찾기</a></span>
                                         <span class="logintool-text"><a href="#">비밀번호 찾기</a></span>
                                     </div>
                                 </div>
-                            </div>
 
+                            </div>
+                            <!-- submit 버튼 -->
                             <div class="button-container">
                                 <button id="submit-btn" type="submit" class="main-btn btn-text magin-t-1">회원 가입</button>
                                 <div class="main-btn kakao-login-btn"><i class="fas fa-comment"></i>카카오톡 로그인</div>
                             </div>
+
                         </div>
                     </form>
                 </section>
@@ -94,21 +114,6 @@
         </div>
     </div>
     <script src="https://kit.fontawesome.com/ad2be14d60.js" crossorigin="anonymous"></script>
-    <script>
-
-        const btn = document.querySelector('#submit-btn');
-        const cancleBtn =document.querySelector('#cancleBtn');
-        const modalAlert = document.querySelector('#modalAlert');
-        
-        btn.addEventListener("click",(e)=>{
-            e.preventDefault();
-            modalAlert.classList.toggle('hidden');
-        })
-        cancleBtn.addEventListener("click",(e)=>{
-            e.preventDefault();
-            modalAlert.classList.toggle('hidden');
-        })
-
-    </script>
+    <script src="js/modal.js"></script>
 </body> 
 </html>

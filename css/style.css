@@ -6,13 +6,16 @@
 @import url('component/footer.css');
 @import url('component/buttons.css');
 @import url('component/modal.css');
+@import url('component/nav.css');
 
 
 /** Screen */
 @import url('screen/main.css');
-@import url('screen/login-join-form.css');
-
+@import url('screen/input-form.css');
+@import url('screen/client-main.css');
+@import url('screen/st-gallery.css');
 
 
 /** Media-query(화면 반응형) */
 @import url('screen/media-query.css');
+
