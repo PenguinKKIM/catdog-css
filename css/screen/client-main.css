@@ -1,5 +1,5 @@
 .client-main-section{
-    width: 35vw;
+    /* width: 35vw; */
 }
 
 .photo-back{
@@ -51,7 +51,7 @@
 }
 
 .main-btn-component{
-    width: 28vw;
+    width: 90%;
     margin: .5rem;
     padding: .5rem 1rem;
 

@@ -10,11 +10,14 @@
     }
 
     .main-btn{
-        width: 70vw;
+        width: 80vw;
     }
 
     .input-text{
         width: 70vw;
+    }
+    .cd-main{
+        width: 100vw;
     }
 }
 
