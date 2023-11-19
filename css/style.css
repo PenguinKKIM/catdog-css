@@ -3,6 +3,7 @@
 
 
 /** Component */
+@import url('component/container-bgs.css');
 @import url('component/footer.css');
 @import url('component/buttons.css');
 @import url('component/modal.css');
@@ -17,6 +18,9 @@
 @import url('screen/client-main.css');
 @import url('screen/st-gallery.css');
 @import url('screen/st-gallery.css');
+@import url("screen/shoppage.css");
+@import url('screen/mypage.css');
+@import url('screen/nearby.css');
 
 
 /** Media-query(화면 반응형) */

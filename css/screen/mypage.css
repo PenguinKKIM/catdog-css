@@ -1,0 +1,18 @@
+.mypage-title-section{
+    margin-top: 2rem;
+}
+
+.mypage-title-text{
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+.mypage-arrow{
+    margin-right: 1rem;
+    color: rgb(209, 209, 209);
+}
+
+.bg-dogs{
+    background-image: url('../../img/background/bg_mypage.png');
+    background-position: 50% 85%;
+}

@@ -1,7 +1,7 @@
 
 /** 메인과 로그인에 사용한 버튼*/
 .main-btn{
-    width: 20vw;
+    width: 15rem;
     height: 3.5rem;
 
     display: flex;
@@ -18,9 +18,8 @@
 }
 
 /** 버튼 안 텍스트 */
-
 .btn-text{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
     color: white;
 }

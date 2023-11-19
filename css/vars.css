@@ -11,3 +11,19 @@
 .tx-black{
     color: var(--text-color);
 }
+.magin-t-1{
+    margin-top: 1rem;
+}
+
+.divide-line{
+    border: 0px;
+    width: 100%;
+    border-top:  1px dashed var(--btn-nomal);
+}
+
+
+.gray-line{
+    border: 0px;
+    width: 70%;
+    border-top:  1px solid rgb(180, 180, 180);
+}
