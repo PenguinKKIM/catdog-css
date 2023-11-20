@@ -15,7 +15,6 @@ input::placeholder{
     color: #979797;
 }
 
-
 .filebox{
     margin-top: 2rem;
     width: inherit;
@@ -45,8 +44,15 @@ input[type=file]{
     display: none;
 }
 
+[type=text],[type=password]{
+    background: none;
+}
+
 [type=text]:focus{
-    content: '이름';
+    border-bottom: 1px solid var(--btn-submit);
+    transition: border-bottom .3s ease-in-out;
+}
+[type=password]:focus{
     border-bottom: 1px solid var(--btn-submit);
     transition: border-bottom .3s ease-in-out;
 }

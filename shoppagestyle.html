@@ -27,11 +27,11 @@
 
                 <nav id="cdNavDropDown" class="cd-nav hidden">
                     <ul class="nav-ul">
-                        <li class="nav-li">근처 샵 보기<i class="fa-solid fa-map"></i></li>
-                        <li class="nav-li">갤러리 구경하기<i class="fas fa-camera-retro"></i></li>
-                        <li class="nav-li">반려동물 등록하기<i class="fas fa-paw"></i></li>
-                        <li class="nav-li">예약 확인하기<i class="fas fa-clipboard-list"></i></li>
-                        <li class="nav-li">마이 페이지<i class="fas fa-user"></i></li>
+                        <li class="nav-li"><a href="nearby-shops.html">근처 샵 보기</a><i class="fa-solid fa-map"></i></li>
+                        <li class="nav-li"><a href="st-gallery.html">갤러리 구경하기</a><i class="fas fa-camera-retro"></i></li>
+                        <li class="nav-li"><a href="cl-petregform.html">반려동물 등록하기</a><i class="fas fa-paw"></i></li>
+                        <li class="nav-li"><a href="cl-reservation.html">예약 확인하기</a><i class="fas fa-clipboard-list"></i></li>
+                        <li class="nav-li"><a href="cl-mypage.html">마이 페이지</a><i class="fas fa-user"></i></li>
                     </ul>
                 </nav>
 
@@ -52,11 +52,11 @@
                     <!-- 샵페이지 네비게이션-->
                     <nav class="main-nav">
                         <ul class="main-nav-list">
-                            <li class="main-nav-list-text"><a href="#">홈</a></li>
-                            <li class="main-nav-list-text"><a href="#">메뉴</a></li>
-                            <li class="main-nav-list-text"><a href="#">디자이너</a></li>
-                            <li class="main-nav-list-text"><a href="#">스타일</a></li>
-                            <li class="main-nav-list-text"><a href="#">리뷰</a></li>
+                            <li class="main-nav-list-text"><a href="shoppagemain.html">홈</a></li>
+                            <li class="main-nav-list-text"><a href="shpopagemenu.html">메뉴</a></li>
+                            <li class="main-nav-list-text"><a href="shoppagestylelist.html">디자이너</a></li>
+                            <li class="main-nav-list-text"><a href="shoppagestyle.html">스타일</a></li>
+                            <li class="main-nav-list-text"><a href="shoppagereview.html">리뷰</a></li>
                             <li class="main-nav-list-text"><a href="#">문의</a></li>
                         </ul>
                     </nav>
@@ -72,32 +72,75 @@
                     <div class="shop-title-text sm-text ma-top2rem">스타일</div>
                     <section class="st-gallery-section">
                         <div class="st-gallery-grid">
-                            <div class="st-gallery-img">
-                                <a href="#"><img src="img/gallrey-img/textimg.png" alt=""></a>
-                            </div>
-                            <div class="st-gallery-img"> <a href="#"><img src="img/gallrey-img/textimg.png" alt=""></a>
-                            </div>
-                            <div class="st-gallery-img"> <a href="#"><img src="img/gallrey-img/textimg.png" alt=""></a>
-                            </div>
-                            <div class="st-gallery-img"> <a href="#"><img src="img/gallrey-img/textimg.png" alt=""></a>
-                            </div>
-                            <div class="st-gallery-img"> <a href="#"><img src="img/gallrey-img/textimg.png" alt=""></a>
-                            </div>
-                            <div class="st-gallery-img"> <a href="#"><img src="img/gallrey-img/textimg.png" alt=""></a>
-                            </div>
-                            <div class="st-gallery-img"> <a href="#"><img src="img/gallrey-img/textimg.png" alt=""></a>
-                            </div>
-                            <div class="st-gallery-img"> <a href="#"><img src="img/gallrey-img/textimg.png" alt=""></a>
-                            </div>
-                            <div class="st-gallery-img"> <a href="#"><img src="img/gallrey-img/textimg.png" alt=""></a>
-                            </div>
-                            <div class="st-gallery-img"> <a href="#"><img src="img/gallrey-img/textimg.png" alt=""></a>
-                            </div>
-                            <div class="st-gallery-img"> <a href="#"><img src="img/gallrey-img/textimg.png" alt=""></a>
-                            </div>
-                            <div class="st-gallery-img"> <a href="#"><img src="img/gallrey-img/textimg.png" alt=""></a>
+                        <!-- 이미지 게시판 요소  -->
+                        <div class="st-gallery-img"> 
+                            <a href="#"><img src="img/gallrey-img/textimg.png" alt="" class="hover-img"></a>
+                            <div class="img-comment-hover">
+                                <span class="img-hover-icon"><i class="fas fa-heart"></i>{00}</span>
+                                <span class="img-hover-icon"><i class="fas fa-comment"></i></i>{00}</span>                                
                             </div>
                         </div>
+                        <!-- 이미지 게시판 요소 끝 -->
+
+                        <div class="st-gallery-img"> 
+                            <a href="#"><img src="img/gallrey-img/textimg.png" alt="" class="hover-img"></a>
+                            <div class="img-comment-hover">
+                                <span class="img-hover-icon"><i class="fas fa-heart"></i>{00}</span>
+                                <span class="img-hover-icon"><i class="fas fa-comment"></i></i>{00}</span>                                
+                            </div>
+                        </div>
+                        <div class="st-gallery-img"> 
+                            <a href="#"><img src="img/gallrey-img/textimg.png" alt="" class="hover-img"></a>
+                            <div class="img-comment-hover">
+                                <span class="img-hover-icon"><i class="fas fa-heart"></i>{00}</span>
+                                <span class="img-hover-icon"><i class="fas fa-comment"></i></i>{00}</span>                                
+                            </div>
+                        </div>
+                        <div class="st-gallery-img"> 
+                            <a href="#"><img src="img/gallrey-img/textimg.png" alt="" class="hover-img"></a>
+                            <div class="img-comment-hover">
+                                <span class="img-hover-icon"><i class="fas fa-heart"></i>{00}</span>
+                                <span class="img-hover-icon"><i class="fas fa-comment"></i></i>{00}</span>                                
+                            </div>
+                        </div>
+                        <div class="st-gallery-img"> 
+                            <a href="#"><img src="img/gallrey-img/textimg.png" alt="" class="hover-img"></a>
+                            <div class="img-comment-hover">
+                                <span class="img-hover-icon"><i class="fas fa-heart"></i>{00}</span>
+                                <span class="img-hover-icon"><i class="fas fa-comment"></i></i>{00}</span>                                
+                            </div>
+                        </div>
+                        <div class="st-gallery-img"> 
+                            <a href="#"><img src="img/gallrey-img/textimg.png" alt="" class="hover-img"></a>
+                            <div class="img-comment-hover">
+                                <span class="img-hover-icon"><i class="fas fa-heart"></i>{00}</span>
+                                <span class="img-hover-icon"><i class="fas fa-comment"></i></i>{00}</span>                                
+                            </div>
+                        </div>
+                        <div class="st-gallery-img"> 
+                            <a href="#"><img src="img/gallrey-img/textimg.png" alt="" class="hover-img"></a>
+                            <div class="img-comment-hover">
+                                <span class="img-hover-icon"><i class="fas fa-heart"></i>{00}</span>
+                                <span class="img-hover-icon"><i class="fas fa-comment"></i></i>{00}</span>                                
+                            </div>
+                        </div>
+                        <div class="st-gallery-img"> 
+                            <a href="#"><img src="img/gallrey-img/textimg.png" alt="" class="hover-img"></a>
+                            <div class="img-comment-hover">
+                                <span class="img-hover-icon"><i class="fas fa-heart"></i>{00}</span>
+                                <span class="img-hover-icon"><i class="fas fa-comment"></i></i>{00}</span>                                
+                            </div>
+                        </div>
+                        <div class="st-gallery-img"> 
+                            <a href="#"><img src="img/gallrey-img/textimg.png" alt="" class="hover-img"></a>
+                            <div class="img-comment-hover">
+                                <span class="img-hover-icon"><i class="fas fa-heart"></i>{00}</span>
+                                <span class="img-hover-icon"><i class="fas fa-comment"></i></i>{00}</span>                                
+                            </div>
+                        </div>
+
+                        </div>
+                        <!-- 이미지 9개 이상시 나오는..? -->
                         <div class="main-btn"><span class="btn-text">더보기</span></div>
                     </section>
 

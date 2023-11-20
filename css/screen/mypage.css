@@ -16,3 +16,36 @@
     background-image: url('../../img/background/bg_mypage.png');
     background-position: 50% 85%;
 }
+
+.reservation-container{
+    
+}
+.re-shop-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.re-btns{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.re-text{
+    color: rgb(179, 179, 179);
+}
+.re-shop-name{
+    font-weight: 600;
+}
+.re-date{
+    margin: 1rem 0; 
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.is-visit{
+    margin: 0 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--btn-submit);
+}

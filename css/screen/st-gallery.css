@@ -17,11 +17,43 @@
 }
 
 .st-gallery-img{
+    position: relative;
     background-color: rgb(243, 243, 243);
 }
 
-.st-gallery-img>a>img{
+.hover-img{
     height: 100%;
     width: 100%;
+
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
 }
+
+.img-comment-hover{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    opacity: 0;
+    z-index: 10;
+}
+.hover-img:hover{
+    -webkit-filter:blur(1px)  grayscale(50%);
+	filter:blur(1px)  grayscale(50%);
+}
+
+.st-gallery-img:hover .img-comment-hover{
+    opacity: 1;
+}
+
+.img-hover-icon{
+    color: rgb(82, 82, 82);
+}
+
+.img-hover-icon>i{
+    color: rgb(82, 82, 82);
+}
+
+
 

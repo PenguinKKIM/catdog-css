@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>보호자 마이페이지</title>
+    <title>샵페이지</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="web-container">
+    <div class="web-container ">
         <div class="cd-container bg-white bg-dogs">
             <header class="cd-header">
                 <div class="logo-icon-container">
@@ -27,17 +27,15 @@
 
                 <nav id="cdNavDropDown" class="cd-nav hidden">
                     <ul class="nav-ul">
-                        <li class="nav-li"><a href="nearby-shops.html">근처 샵 보기</a><i class="fa-solid fa-map"></i></li>
-                        <li class="nav-li"><a href="st-gallery.html">갤러리 구경하기</a><i class="fas fa-camera-retro"></i></li>
-                        <li class="nav-li"><a href="cl-petregform.html">반려동물 등록하기</a><i class="fas fa-paw"></i></li>
-                        <li class="nav-li"><a href="cl-reservation.html">예약 확인하기</a><i class="fas fa-clipboard-list"></i></li>
-                        <li class="nav-li"><a href="cl-mypage.html">마이 페이지</a><i class="fas fa-user"></i></li>
+                        <li class="nav-li">샵 정보 등록/수정<i class="fas fa-store"></i></li>
+                        <li class="nav-li">스타일리스트 등록/수정<i class="fas fa-cut"></i></i></li>
+                        <li class="nav-li">예약 관리<i class="fas fa-clipboard-list"></i></li>
                     </ul>
                 </nav>
 
             </header>
 
-            <main class="cd-main dis-center">
+            <main class="cd-main dis-center ">
 
                 <section class="section-header">
                     <div class="section-header-container">
@@ -45,33 +43,52 @@
                     </div>
                 </section>
 
-                <section class="mypage-title-section">
-                    <div class="mypage-title-container">
-                        <div class="mypage-title-text">안녕하세요! <span class="color-nomal">{보호자}</span>님!</div>
-                    </div>
-                </section>
-
                 <section class="shop-main-section bg-white">
                     <ul class="nav-ul">
                         <li class="nav-li">
                             <div>
-                                <i class="fas fa-caret-square-right mypage-arrow"></i><a href="cl-petreg.html">반려동물 등록/수정하기</a>
-                            </div>
-                            <i class="fas fa-store"></i>
-                        </li>
-                        <li class="nav-li">
-                            <div>
-                                <i class="fas fa-caret-square-right mypage-arrow"></i><a href="#">보호자 정보 수정하기</a>
-                            </div>
-                            <i class="fas fa-store"></i>
-                        </li>
-                        <li class="nav-li">
-                            <div>
-                                <i class="fas fa-caret-square-right mypage-arrow"></i><a href="cl-reservation.html">예약 확인하기</a>
+                                <i class="fas fa-caret-square-right mypage-arrow"></i><a href="#">샵 정보 등록 / 수정하기</a>
                             </div>
                             <i class="fas fa-store"></i>
                         </li>
                     </ul>
+
+                    <!-- 등록한 샵이 없다면 -->
+                    <form action="" class="shop-form-container">
+                        <div class="input-img-click sm-input-img">
+                            <p> 등록한 샵이 없습니다 <br />
+                                <a href="cl-petregform.html">샵 등록하기 <i class="fas fa-plus-circle"></i></a>
+                            </p>
+                        </div>
+                    </form>
+
+                    <!-- 등록한 샵이 있다면 -->
+                    <div class="stylelist-content">
+                        <div class="shpo-list-li">
+                            <hr class="divide-line">
+                            <div class="nearby-shop-container">
+                                <div class="nearby-shop-address-container">
+                                    <div class="nearby-shop-img-container">
+                                        <div class="nearby-shop-img"></div>
+                                    </div>
+
+                                    <div class="shop-text-container">
+                                        <h3 class="shop-name">KOSTA 살롱 10km</h3>
+                                        <div class="shop-adderss">
+                                            <p class="shop-adderss-text">
+                                                서울 금천구 가산 디지털 1로 70
+                                                호서대 벤쳐 타워
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="st-button-container">
+                            <button class="st-button">편집<i class="fas fa-pen btn-icon"></i></button>
+                        </div>
+                    </div>
 
                 </section>
 

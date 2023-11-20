@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Login</title>
+    <title>계정 찾기</title>
 </head>
 
 <body>
@@ -15,7 +15,7 @@
 
                 <section class="main-logo">
                     <img src="img/logo/logo_color.png" alt="댕냥꽁냥 로고">
-                    <span class="main-logo-text">보호자 로그인</span>
+                    <span class="main-logo-text">계정 찾기</span>
                 </section>
 
 
@@ -23,24 +23,23 @@
                     <form action="#" method="post" class="form-css">
                         <div class="form-container">
                             <div class="input-container">
-                                <input type="text" id="nomal-login" name="nomal-login" placeholder="댕냥꽁냥 아이디"
+                                <input type="text" id="clPhoneNumber" name="cl-phone-number" placeholder="핸드폰 번호를 입력하세요"
                                     class="input-text">
-                                <input type="password" id="nomal-password" name="nomal-password" placeholder="비밀번호"
+                                <input type="password" id="clPassword" name="cl-password" placeholder="비밀번호 를 입력하세요"
                                     class="input-text">
                                 <div class="login-tools">
-                                    <span><i class="fas fa-check-circle"></i> 자동 로그인</span>
+                                    <span></span>
                                     <div>
-                                        <span class="logintool-text"><a href="#">회원가입</a></span>
-                                        <span class="logintool-text"><a href="#">계정찾기</a></span>
-                                        <span class="logintool-text"><a href="#">비밀번호 찾기</a></span>
+                                        <span class="logintool-text"><a href="cl-join.html">회원가입</a></span>
+                                        <span class="logintool-text"><a href="cl-findpassword.html">비밀번호 찾기</a></span>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="button-container">
-                                <button type="submit" class="main-btn btn-text magin-t-1">로그인</button>
-                                <div class="main-btn kakao-login-btn"><i class="fas fa-comment"></i>카카오톡 로그인</div>
+                                <button type="submit" class="main-btn magin-t-1"><a href="cl-idresult.html" class="btn-text">아이디 찾기</a></button>
                             </div>
+
                         </div>
                     </form>
                 </section>
