@@ -4,95 +4,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>샵페이지</title>
     <link rel="stylesheet" href="css/style.css">
+    <title>샵 등록하기</title>
 </head>
 
 <body>
-    <div class="web-container ">
+    <!-- 웹버전 일때 컨테이너 -->
+    <div class="web-container">
+        <!-- 앱 컨테이너 -->
         <div class="cd-container bg-white bg-dogs">
-            <header class="cd-header">
-                <div class="logo-icon-container">
-
-                    <div class="header-logo">
-                        <img src="img/logo/logo_color.png" alt="">
+            <!-- 모달 알림창 -->
+            <div id="modalAlert" class="modal-alert hidden">
+                <div class="modal-body">
+                    <div class="modal-text">
+                        <h2>샵 등록</h2>
+                        <p>하시겠습니까?</p>
                     </div>
-
-                    <div class="icon-container">
-                        <span class="header-btn"><a href="main.html">로그아웃</a></span>
-                        <i class="fa-solid fa-bars nav-icon" id="navIconBar"></i>
+                    <div class="modal-btns">
+                        <button id="cancleBtn" class="small-btn btn-gray btn-text">취소</button>
+                        <button class="small-btn"><a href="st-shopreg.html" class="btn-text">등록하기</a></button>
                     </div>
-
                 </div>
+            </div>
 
-                <nav id="cdNavDropDown" class="cd-nav hidden">
-                    <ul class="nav-ul">
-                        <li class="nav-li">샵 정보 등록/수정<i class="fas fa-store"></i></li>
-                        <li class="nav-li">스타일리스트 등록/수정<i class="fas fa-cut"></i></i></li>
-                        <li class="nav-li">예약 관리<i class="fas fa-clipboard-list"></i></li>
-                    </ul>
-                </nav>
+            <!-- 메인 컨텐트 -->
+            <main class="cd-main">
 
-            </header>
-
-            <main class="cd-main dis-center ">
-
-                <section class="section-header">
-                    <div class="section-header-container">
-                        <span class="section-header-text">마이 페이지</span>
-                    </div>
+                <!-- 로고 -->
+                <section class="main-logo">
+                    <img src="img/logo/logo_color.png" alt="댕냥꽁냥 로고">
+                    <span class="main-logo-text">샵 등록하기</span>
                 </section>
 
-                <section class="shop-main-section bg-white">
-                    <ul class="nav-ul">
-                        <li class="nav-li">
-                            <div>
-                                <i class="fas fa-caret-square-right mypage-arrow"></i><a href="#">샵 정보 등록 / 수정하기</a>
-                            </div>
-                            <i class="fas fa-store"></i>
-                        </li>
-                    </ul>
+                <!-- 폼 -->
+                <section class="form-section">
+                    <form action="#" method="post" class="form-css">
+                        <div class="form-container">
+                            <!-- 인풋 모여있는 컨테이너 -->
+                            <div class="input-container">
 
-                    <!-- 등록한 샵이 없다면 -->
-                    <form action="" class="shop-form-container">
-                        <div class="input-img-click sm-input-img">
-                            <p> 등록한 샵이 없습니다 <br />
-                                <a href="cl-petregform.html">샵 등록하기 <i class="fas fa-plus-circle"></i></a>
-                            </p>
+                                <!-- 샵 이름 -->
+                                <input type="text" id="shopName" name="shopName" placeholder="샵 이름"
+                                    class="input-text">
+
+                                <input type="text" id="shopNumber" name="shopNumber" placeholder="샵 번호"
+                                    class="input-text">
+
+                                <div class="duplication-check">
+                                    <input type="text" id="postcode" placeholder="우편번호" class="input-text">
+                                    <input type="button" onclick="sample3_execDaumPostcode()" value="우편번호 찾기"
+                                        class="duplication-btn small-btn">
+                                </div>
+
+                                <input type="text" id="address" name="address" placeholder="샵 주소" class="input-text"><br>
+                                <input type="text" id="detailAddress" placeholder="상세주소" class="input-text">
+                                <input type="text" id="extraAddress" placeholder="참고항목" class="input-text">
+
+                                <!-- 샵 사진 올리기 -->
+                                <div class="filebox">
+                                    <input type="shopImgFile" id="shopImgFileLink" accept="image/*"
+                                        class="input-box-style" value="사진을 올려주세요" />
+                                    <label for="shopImgFile">샵 사진 올리기</label>
+                                    <input type="file" id="shopImgFile" accept="image/*" />
+                                </div>
+
+                                <hr class="gray-line">
+
+                            </div>
+                            <!-- submit 버튼 -->
+                            <div class="button-container">
+                                <button id="submit-btn" type="submit" class="main-btn btn-text magin-t-1">등록하기</button>
+                                <div class="main-btn magin-t-1 btn-gray btn-text"><a href="st-shopreg.html">취소</a></div>
+                            </div>
+
                         </div>
                     </form>
-
-                    <!-- 등록한 샵이 있다면 -->
-                    <div class="stylelist-content">
-                        <div class="shpo-list-li">
-                            <hr class="divide-line">
-                            <div class="nearby-shop-container">
-                                <div class="nearby-shop-address-container">
-                                    <div class="nearby-shop-img-container">
-                                        <div class="nearby-shop-img"></div>
-                                    </div>
-
-                                    <div class="shop-text-container">
-                                        <h3 class="shop-name">KOSTA 살롱 10km</h3>
-                                        <div class="shop-adderss">
-                                            <p class="shop-adderss-text">
-                                                서울 금천구 가산 디지털 1로 70
-                                                호서대 벤쳐 타워
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="st-button-container">
-                            <button class="st-button">편집<i class="fas fa-pen btn-icon"></i></button>
-                        </div>
-                    </div>
-
                 </section>
-
-
 
             </main>
 
@@ -116,11 +103,16 @@
                 </div>
 
             </footer>
-
         </div>
     </div>
     <script src="https://kit.fontawesome.com/ad2be14d60.js" crossorigin="anonymous"></script>
-    <script src="js/navBar.js"></script>
+    <script src="js/modal.js"></script>
+    <script>
+        document.getElementById('shopImgFile').addEventListener('change', function () {
+            let fileName = document.getElementById('shopImgFile').value;
+            document.querySelector('#shopImgFileLink').value = fileName;
+        });
+    </script>
 </body>
 
 </html>
