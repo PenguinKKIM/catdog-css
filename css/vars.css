@@ -11,6 +11,13 @@
 .tx-black{
     color: var(--text-color);
 }
+.tx-gray{
+    color: #D5D6D7;
+}
+.tx-white{
+    color: white;
+}
+
 .magin-t-1{
     margin-top: 1rem;
 }

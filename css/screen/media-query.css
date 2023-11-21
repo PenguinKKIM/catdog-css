@@ -12,7 +12,9 @@
     .main-btn{
         width: 80vw;
     }
-
+    .main-sm-btn{
+        width: 40vw;
+    }
     .input-text{
         width: 70vw;
     }
@@ -40,5 +42,12 @@
         position: absolute;
         bottom: 10%;
     }
+    .main-nav-list{
+        width: 100%;
+        justify-content: center;
+    }
+    .main-nav-list-text>a{
+        margin: 0 0.3rem;
+    } 
 
 }
