@@ -21,6 +21,7 @@
 @import url("screen/shoppage.css");
 @import url('screen/mypage.css');
 @import url('screen/nearby.css');
+@import url('screen/cl-gallery.css');
 
 
 /** Media-query(화면 반응형) */

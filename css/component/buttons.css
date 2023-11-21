@@ -18,6 +18,11 @@
     cursor: pointer;
 }
 
+.main-sm-btn{
+    width: 10rem;
+    height: 2rem;
+}
+
 /** 버튼 안 텍스트 */
 .btn-text{
     font-size: 1.1rem;
