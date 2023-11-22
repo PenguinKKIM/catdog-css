@@ -186,3 +186,11 @@ input[type='date']::webkit-calendar{
     border: none;
     outline: none;
 }
+
+.style-area{
+    border: none;
+    outline: none;
+    width: 15rem;
+    font-family: 'Pretendard-Regular';
+    background-color: #e2e2e2;
+}
