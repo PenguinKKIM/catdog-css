@@ -19,7 +19,7 @@
                 <div class="modal-body">
                     <div class="modal-text">
                         <h2>반려동물</h2>
-                        <p>등록 하시겠습니까?</p>
+                        <p>수정 하시겠습니까?</p>
                     </div>
                     <div class="modal-btns">
                         <button id="cancleBtn" class="small-btn btn-gray btn-text">취소</button>
@@ -55,7 +55,7 @@
 
                                 <!-- 반려동물 이름 -->
                                 <input type="text" id="petName" name="petName" placeholder="반려동물 이름"
-                                    class="input-text boader-none">
+                                    class="input-text boader-none" value="{등록했던 동물이름}">
                                 <hr class="gray-line">
 
                                 <!-- 반려동물 종류 (강아지인지 고양이 인지 체크) -->
@@ -71,17 +71,17 @@
 
                                 <!-- 반려동물 나이 -->
                                 <input type="text" id="petAge" name="petName" placeholder="나이"
-                                    class="input-text boader-none">
+                                    class="input-text boader-none" value="{등록했던 동물나이}">
                                 <hr class="gray-line">
 
                                 <!-- 반려동물 몸무게 -->
                                 <input type="text" id="petWeight" name="petWeight" placeholder="몸무게"
-                                    class="input-text boader-none">
+                                    class="input-text boader-none" value="{등록했던 동물 몸무게}">
                                 <hr class="gray-line">
 
                                 <!-- 반려동물 품종 (진돗개인진 뭐 그런) -->
                                 <input type="text" id="petSpecies" name="petSpecies" placeholder="반려동물 품종"
-                                    class="input-text boader-none">
+                                    class="input-text boader-none" value="{등록했던 동물 품종}">
                                 <hr class="gray-line">
 
                                 <!-- 반려동물 성별 -->
@@ -113,10 +113,11 @@
                             <div class="button-container">
 
                                 <button id="submit-btn" type="submit" class="main-btn btn-text magin-t-1">
-                                    동물 등록하기
+                                    동물 수정하기
                                 </button>
-                                <div class="main-btn  magin-t-1 btn-gray"><a href="cl-mypage.html"
-                                        class="btn-text">취소</a> </div>
+                                <div class="main-btn  magin-t-1 btn-gray">
+                                    <a href="cl-petreg.html" class="btn-text">취소</a> 
+                                </div>
 
                             </div>
 
