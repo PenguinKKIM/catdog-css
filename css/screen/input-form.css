@@ -194,3 +194,7 @@ input[type='date']::webkit-calendar{
     font-family: 'Pretendard-Regular';
     background-color: #e2e2e2;
 }
+
+.form-text{
+    font-weight: 600;
+}

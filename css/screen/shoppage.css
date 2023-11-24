@@ -226,3 +226,12 @@
 .btn-gray:hover{
     background-color: var( --btn-disable);
 }
+
+.shop-btns{
+    display: flex;
+    justify-content: center;
+}
+
+.shop-btn{
+    margin: .5rem 1rem;
+}
