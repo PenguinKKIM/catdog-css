@@ -86,36 +86,52 @@
                         </div>
                     </div>
                     <hr class="divide-line">
-                    <input type="date" placeholder="날짜를 선택해주세요.">
+                    <span class="form-text">{0000-00-00} {월요일}</span>
                     <hr class="divide-line">
-
-                    <button class="reser-time-container">
+                    <div class="reser-time-container magin-t-1">
                         <div class="reser-time">
-                            <a href="cl-reserform.html"> <span class="reser-time-text">10 : 00</span></a>
-                        </div>
-                    </button>
-                    <hr class="divide-line">
-
-                    <div class="reser-time-container btn-gray">
-                        <div class="reser-time">
-                            <span class="reser-time-text">12 : 00</span>
+                            <span class="reser-time-text">10 : 00</span>
                         </div>
                     </div>
                     <hr class="divide-line">
-
-                    <div class="reser-time-container">
-                        <div class="reser-time">
-                            <span class="reser-time-text">14 : 00</span>
-                        </div>
+                    <div> <span class="form-text">예약자 닉네임 :</span> {예약자 닉네임}</div>
+                    <hr class="divide-line">
+                    <div> <span class="form-text">반려동물 정보 </span>
+                        <button class="bg-orange style-btn">
+                            <span class=" tx-lightorg">반려동물 정보 추가<i class="fas fa-cut tx-lightorg"></i></span>
+                        </button>
                     </div>
                     <hr class="divide-line">
+                    <!-- 반려동물을 추가하지 않았다면 -->
+                    <div class="input-img-click sm-input-img">
+                        <p>반려동물을 추가하세요!
+                        </p>
+                    </div>
 
-                    <div class="reser-time-container">
-                        <div class="reser-time">
-                            <span class="reser-time-text">16 : 00</span>
+                    <!-- 반려동물을 추가했다면 -->
+                    <div class="stylelist-content">
+                        <div class="st-profile-container">
+
+                            <div class="st-profile-img">
+                                <img src="./img/gallrey-img/textimg.png" alt="등록한 반려동물 사진" class="st-profile-img">
+                            </div>
+
+                            <div class="st-profile-context">
+                                <div class="st-profile-name">
+                                    {반려동물}
+                                </div>
+                                <div class="st-profile-shop">
+                                    {반려동물 종류}
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-                    <hr class="divide-line">
+
+                    <div class="shop-btns">
+                        <a href="shoppagestylelist.html"><button class="shop-btn small-btn btn-gray btn-text">취소</button></a>
+                        <button class="shop-btn small-btn btn-text">예약하기</button>
+                    </div>
 
             </main>
 
